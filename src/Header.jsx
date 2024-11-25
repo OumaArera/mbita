@@ -64,7 +64,7 @@ const Header = () => {
       { name: "Music Club", path: "/music-club" },
       { name: "Community Service", path: "/community-service-club" },
       { name: "Interact", path: "/interact" },
-      { name: "Young Catholics Service", path: "/ycs" },
+      { name: "Young Catholics Students", path: "/ycs" },
       { name: "Seventh Day Adventist", path: "/sda" },
       { name: "Christian Union", path: "/cu" },
     ],
