@@ -88,7 +88,7 @@ const Home = () => {
             <div className="flex justify-center space-x-4">
               <Link to="/apply-for-admission">
                 <button className="px-8 py-3 h-14 bg-[#E7AC0B] hover:bg-[#d69908] text-white text-lg rounded-md shadow-lg flex items-center justify-center">
-                  Apply Now
+                  Apply Today
                 </button>
               </Link>
               <Link to="/location">
