@@ -81,12 +81,6 @@ const Home = () => {
             <h1 className="text-5xl font-extrabold mb-4 tracking-tight">
               Welcome to Mbita High School
             </h1>
-            <p className="text-lg md:text-xl mb-6 leading-relaxed">
-              Since 1966, Mbita High School has been a beacon of academic excellence and
-              character development. Nestled along the shores of Lake Victoria in Homa Bay
-              County, we are a National School with a legacy of nurturing leaders and
-              innovators. Our motto: <span className="font-bold italic">Paddle to Success.</span>
-            </p>
             <div className="flex justify-center space-x-4">
               <Link to="/apply-for-admission">
                 <button className="px-8 py-3 bg-[#E7AC0B] hover:bg-[#d69908] text-white text-lg rounded-md shadow-lg">
@@ -108,7 +102,13 @@ const Home = () => {
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl font-extrabold mb-8">Why Join Mbita High School?</h2>
           <p className="text-lg md:text-xl mb-12 leading-relaxed">
-            Mbita High School offers a holistic education experience that combines
+          <p className="text-lg md:text-xl mb-6 leading-relaxed">
+              Since 1966, Mbita High School has been a beacon of academic excellence and
+              character nurturing. Nestled along the shores of Lake Victoria in Homa Bay
+              County, we are a National School with a legacy of nurturing leaders and
+              innovators.
+            </p>
+            We offer a holistic education experience that combines
             academic excellence, talent nurturing, and leadership development in a serene
             environment.
           </p>
