@@ -36,8 +36,6 @@ const Header = () => {
       { name: "Tales from the Students", path: "/tales-from-students" },
       { name: "School Magazine", path: "/school-magazine" },
       { name: "Jobs Vacancy", path: "/jobs-vacancy" },
-    ],
-    News: [
       { name: "Latest News", path: "/news" },
       { name: "School Updates", path: "/school-updates" },
       { name: "Events Calendar", path: "/events-calendar" },
