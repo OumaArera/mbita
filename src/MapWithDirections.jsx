@@ -49,6 +49,11 @@ const MapWithDirections = () => {
     }
   }, [mapLoaded, currentDestinationIndex]);
 
+  if (!API_KEY) {
+    // If API_KEY is not available, show a loading message or error
+    return <div>Google Maps API key is missing. Please try again later.</div>;
+  }
+
   return (
     <LoadScript googleMapsApiKey={API_KEY}>
       <GoogleMap
@@ -65,7 +70,7 @@ const MapWithDirections = () => {
           <DirectionsRenderer
             directions={directionsResponse}
             options={{
-              suppressMarkers: true, // Prevents default markers
+              suppressMarkers: true, 
             }}
           />
         )}
