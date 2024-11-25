@@ -103,23 +103,33 @@ const Footer = () => {
             <h2 className="text-xl font-bold mb-4">Quick Links</h2>
             <ul className="space-y-2">
               <li>
-                <NavLink to="/about" className="hover:text-yellow-500">
-                  About Us
+                <NavLink to="/our-history" className="hover:text-yellow-500">
+                  Story of Mbita High School
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/admissions" className="hover:text-yellow-500">
-                  Admissions
+                <NavLink to="/apply-for-admission" className="hover:text-yellow-500">
+                  Apply for Admission
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/academics" className="hover:text-yellow-500">
-                  Academics
+                <NavLink to="/school-performance" className="hover:text-yellow-500">
+                  School Performance
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/contact" className="hover:text-yellow-500">
-                  Contact Us
+                <NavLink to="/students-life" className="hover:text-yellow-500">
+                  Students Life
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/board-of-management" className="hover:text-yellow-500">
+                  Board of Management
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/adminstration" className="hover:text-yellow-500">
+                  Administration
                 </NavLink>
               </li>
             </ul>
