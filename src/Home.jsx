@@ -158,6 +158,7 @@ const Home = () => {
                 >
                   {counters[index]}
                   {fact.isPercentage && "%"}
+                  {(fact.title === "Alumni Community" || fact.title === "Student Population") && "+"}
                 </h3>
                 <h4 className="text-2xl font-bold mb-4">{fact.title}</h4>
                 <p className="text-lg">{fact.description}</p>
@@ -166,6 +167,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+
       <div>
         {/* Other sections */}
         <News />
