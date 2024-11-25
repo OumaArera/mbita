@@ -51,22 +51,24 @@ const Home = () => {
   // Effect for animating counters
   useEffect(() => {
     const intervals = quickFacts.map((fact, index) => {
-      const increment = Math.ceil(fact.value / 100); // Increment value
+      const increment = Math.max(1, Math.ceil(fact.value / 100)); // Ensure at least an increment of 1
       return setInterval(() => {
         setCounters((prev) => {
           const newCounters = [...prev];
-          if (newCounters[index] < fact.value) {
-            newCounters[index] += increment;
-          } else {
+          if (newCounters[index] + increment >= fact.value) {
+            // Set directly to target if next increment overshoots
             newCounters[index] = fact.value;
+          } else {
+            newCounters[index] += increment;
           }
           return newCounters;
         });
       }, 20); // Update every 20ms
     });
-
+  
     return () => intervals.forEach((interval) => clearInterval(interval)); // Cleanup intervals
   }, [quickFacts]);
+  
 
   return (
     <div>
