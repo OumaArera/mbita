@@ -78,17 +78,21 @@ const Home = () => {
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="absolute inset-0 flex justify-center items-center text-white text-center p-8">
           <div className="max-w-3xl">
+            {/* Responsive Heading */}
             <h1 className="text-5xl font-extrabold mb-4 tracking-tight">
-              Welcome to Mbita High School
+              <span className="hidden sm:inline">Welcome to </span>
+              Mbita High School
             </h1>
+
+            {/* Buttons */}
             <div className="flex justify-center space-x-4">
               <Link to="/apply-for-admission">
-                <button className="px-8 py-3 bg-[#E7AC0B] hover:bg-[#d69908] text-white text-lg rounded-md shadow-lg">
+                <button className="px-8 py-3 h-14 bg-[#E7AC0B] hover:bg-[#d69908] text-white text-lg rounded-md shadow-lg flex items-center justify-center">
                   Apply Now
                 </button>
               </Link>
               <Link to="/location">
-                <button className="px-8 py-3 border-2 border-white text-white text-lg rounded-md shadow-lg hover:bg-white hover:text-black">
+                <button className="px-8 py-3 h-14 border-2 border-white text-white text-lg rounded-md shadow-lg hover:bg-white hover:text-black flex items-center justify-center">
                   Location
                 </button>
               </Link>
@@ -96,6 +100,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+
 
       {/* Why Join Section */}
       <div className="bg-gray-100 py-16">
