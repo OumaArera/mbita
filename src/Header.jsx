@@ -138,21 +138,22 @@ const Header = () => {
                   {category}
                 </span>
                 {activeDropdown === category && (
-                  <div className="absolute left-0 mt-2 bg-white text-gray-900 shadow-lg rounded-md w-64 z-10">
-                    <ul className="p-2">
-                      {menuItems[category].map(({ name, path }) => (
-                        <li key={name}>
-                          <NavLink
-                            to={path}
-                            onClick={handleNavLinkClick}
-                            className="block px-4 py-2 hover:bg-[#A20515] hover:text-white rounded"
-                          >
-                            {name}
-                          </NavLink>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                  <div className="absolute left-0 mt-2 bg-white text-gray-900 shadow-lg rounded-md w-64 z-10 max-h-64 overflow-y-auto">
+                  <ul className="p-2">
+                    {menuItems[category].map(({ name, path }) => (
+                      <li key={name}>
+                        <NavLink
+                          to={path}
+                          onClick={handleNavLinkClick}
+                          className="block px-4 py-2 hover:bg-[#A20515] hover:text-white rounded"
+                        >
+                          {name}
+                        </NavLink>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                
                 )}
               </div>
             ))}
